@@ -989,3 +989,73 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }/*# sourceMappingURL=style.css.map */
+#loveCard {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 2s ease;
+  z-index: 9999;
+}
+
+#loveCard.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#loveText {
+  max-width: 650px;
+  background: rgba(255,255,255,0.95);
+  padding: 30px;
+  border-radius: 18px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  white-space: pre-line;
+}
+
+#finalQuestion {
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ff4d88;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+#finalMessage {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 2s ease;
+}
+
+#finalMessage.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#typedMessage {
+  background: rgba(241, 76, 211, 0.95);
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 18px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  white-space: pre-line;
+  text-align: center;
+}
